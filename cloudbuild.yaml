@@ -46,9 +46,9 @@ steps:
     path: /root/.ssh
 
 - name: 'rikorose/gcc-cmake'
-  ntrypoint: 'bash'
-    args:
-    - '-c'
-    - |
-      cmake -H. -Bbuild
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    cmake -H. -Bbuild
 
